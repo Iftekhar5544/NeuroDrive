@@ -1,0 +1,12 @@
+Run Folder: trained_model/eeg_training_20261109_131757
+Model File: trained_model/eeg_training_20261109_131757/eeg_realtime_model.joblib
+Datasets: 1 file(s)
+Evaluation split: Trial-grouped (16 train / 4 test trials)
+Accuracy: 0.1739
+Weighted F1: 0.2476
+Train windows: 72 | Test windows: 46
+Rest undersampling: removed 116 training windows (target=18, seed=42).
+Training windows per class (before -> after): Forward: 18 -> 18; Left: 18 -> 18; Rest: 134 -> 18; Right: 18 -> 18
+Window: 2000 ms (250 samples) | Stride: 500 ms (62 samples)
+Input channels: 16
+Classes: Forward, Left, Rest, Right

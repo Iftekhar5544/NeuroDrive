@@ -1,0 +1,26 @@
+{
+  "created_at_text": "2026-11-09 13:17:57",
+  "dataset_paths": [
+    "dataset/Test_34_M_20261109_125108/eeg_data_Test_34_M_20261109_125108.csv"
+  ],
+  "output_dir": "trained_model",
+  "run_name": "eeg_training",
+  "window_ms": 2000,
+  "stride_ms": 500,
+  "window_samples": 250,
+  "stride_samples": 62,
+  "n_estimators": 800,
+  "max_depth": 0,
+  "test_size": 0.2,
+  "random_seed": 42,
+  "sample_rate_hz": 125,
+  "input_channels": 16,
+  "split_strategy": "trial_grouped",
+  "rest_undersampling": {
+    "strategy": "random_rest_undersampling",
+    "target_rule": "smallest_non_rest_training_class",
+    "scope": "training_partitions_only",
+    "random_seed": 42,
+    "cv_seed_rule": "random_seed + fold_number"
+  }
+}

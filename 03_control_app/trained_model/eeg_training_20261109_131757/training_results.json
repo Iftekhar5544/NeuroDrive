@@ -1,0 +1,299 @@
+{
+  "created_at_text": "2026-11-09 13:17:57",
+  "accuracy": 0.17391304347826086,
+  "weighted_f1": 0.24758454106280195,
+  "cv_mean_accuracy": 0.2396854764107308,
+  "cv_std_accuracy": 0.05156081470155162,
+  "train_windows": 72,
+  "test_windows": 46,
+  "num_features": 279,
+  "classes": [
+    "Forward",
+    "Left",
+    "Rest",
+    "Right"
+  ],
+  "class_window_counts": {
+    "Forward": 22,
+    "Left": 22,
+    "Rest": 167,
+    "Right": 23
+  },
+  "train_class_window_counts_before": {
+    "Forward": 18,
+    "Left": 18,
+    "Rest": 134,
+    "Right": 18
+  },
+  "train_class_window_counts_after": {
+    "Forward": 18,
+    "Left": 18,
+    "Rest": 18,
+    "Right": 18
+  },
+  "test_class_window_counts": {
+    "Forward": 4,
+    "Left": 4,
+    "Rest": 33,
+    "Right": 5
+  },
+  "rest_undersampling": {
+    "strategy": "random_rest_undersampling",
+    "target_rule": "smallest_non_rest_training_class",
+    "random_seed": 42,
+    "rest_labels": [
+      "Rest"
+    ],
+    "target_windows": 18,
+    "applied": true,
+    "removed_windows": 116,
+    "class_window_counts_before": {
+      "Forward": 18,
+      "Left": 18,
+      "Rest": 134,
+      "Right": 18
+    },
+    "class_window_counts_after": {
+      "Forward": 18,
+      "Left": 18,
+      "Rest": 18,
+      "Right": 18
+    }
+  },
+  "rest_undersampling_summary": "Rest undersampling: removed 116 training windows (target=18, seed=42).\nTraining windows per class (before -> after): Forward: 18 -> 18; Left: 18 -> 18; Rest: 134 -> 18; Right: 18 -> 18",
+  "cv_fold_rest_undersampling": [
+    {
+      "strategy": "random_rest_undersampling",
+      "target_rule": "smallest_non_rest_training_class",
+      "random_seed": 43,
+      "rest_labels": [
+        "Rest"
+      ],
+      "target_windows": 18,
+      "applied": true,
+      "removed_windows": 115,
+      "class_window_counts_before": {
+        "Forward": 18,
+        "Left": 18,
+        "Rest": 133,
+        "Right": 18
+      },
+      "class_window_counts_after": {
+        "Forward": 18,
+        "Left": 18,
+        "Rest": 18,
+        "Right": 18
+      },
+      "fold": 1,
+      "validation_class_window_counts": {
+        "Forward": 4,
+        "Left": 4,
+        "Rest": 34,
+        "Right": 5
+      },
+      "accuracy": 0.2553191489361702
+    },
+    {
+      "strategy": "random_rest_undersampling",
+      "target_rule": "smallest_non_rest_training_class",
+      "random_seed": 44,
+      "rest_labels": [
+        "Rest"
+      ],
+      "target_windows": 17,
+      "applied": true,
+      "removed_windows": 116,
+      "class_window_counts_before": {
+        "Forward": 18,
+        "Left": 17,
+        "Rest": 133,
+        "Right": 19
+      },
+      "class_window_counts_after": {
+        "Forward": 18,
+        "Left": 17,
+        "Rest": 17,
+        "Right": 19
+      },
+      "fold": 2,
+      "validation_class_window_counts": {
+        "Forward": 4,
+        "Left": 5,
+        "Rest": 34,
+        "Right": 4
+      },
+      "accuracy": 0.23404255319148937
+    },
+    {
+      "strategy": "random_rest_undersampling",
+      "target_rule": "smallest_non_rest_training_class",
+      "random_seed": 45,
+      "rest_labels": [
+        "Rest"
+      ],
+      "target_windows": 17,
+      "applied": true,
+      "removed_windows": 117,
+      "class_window_counts_before": {
+        "Forward": 17,
+        "Left": 18,
+        "Rest": 134,
+        "Right": 18
+      },
+      "class_window_counts_after": {
+        "Forward": 17,
+        "Left": 18,
+        "Rest": 17,
+        "Right": 18
+      },
+      "fold": 3,
+      "validation_class_window_counts": {
+        "Forward": 5,
+        "Left": 4,
+        "Rest": 33,
+        "Right": 5
+      },
+      "accuracy": 0.1702127659574468
+    },
+    {
+      "strategy": "random_rest_undersampling",
+      "target_rule": "smallest_non_rest_training_class",
+      "random_seed": 46,
+      "rest_labels": [
+        "Rest"
+      ],
+      "target_windows": 17,
+      "applied": true,
+      "removed_windows": 117,
+      "class_window_counts_before": {
+        "Forward": 17,
+        "Left": 17,
+        "Rest": 134,
+        "Right": 19
+      },
+      "class_window_counts_after": {
+        "Forward": 17,
+        "Left": 17,
+        "Rest": 17,
+        "Right": 19
+      },
+      "fold": 4,
+      "validation_class_window_counts": {
+        "Forward": 5,
+        "Left": 5,
+        "Rest": 33,
+        "Right": 4
+      },
+      "accuracy": 0.2127659574468085
+    },
+    {
+      "strategy": "random_rest_undersampling",
+      "target_rule": "smallest_non_rest_training_class",
+      "random_seed": 47,
+      "rest_labels": [
+        "Rest"
+      ],
+      "target_windows": 18,
+      "applied": true,
+      "removed_windows": 116,
+      "class_window_counts_before": {
+        "Forward": 18,
+        "Left": 18,
+        "Rest": 134,
+        "Right": 18
+      },
+      "class_window_counts_after": {
+        "Forward": 18,
+        "Left": 18,
+        "Rest": 18,
+        "Right": 18
+      },
+      "fold": 5,
+      "validation_class_window_counts": {
+        "Forward": 4,
+        "Left": 4,
+        "Rest": 33,
+        "Right": 5
+      },
+      "accuracy": 0.32608695652173914
+    }
+  ],
+  "segment_count_by_file": {
+    "dataset/Test_34_M_20261109_125108/eeg_data_Test_34_M_20261109_125108.csv": 20
+  },
+  "channel_count_by_file": {
+    "dataset/Test_34_M_20261109_125108/eeg_data_Test_34_M_20261109_125108.csv": 16
+  },
+  "input_channels": 16,
+  "train_trial_groups": 16,
+  "test_trial_groups": 4,
+  "confusion_matrix": [
+    [
+      0,
+      0,
+      1,
+      3
+    ],
+    [
+      2,
+      1,
+      0,
+      1
+    ],
+    [
+      17,
+      4,
+      7,
+      5
+    ],
+    [
+      2,
+      0,
+      3,
+      0
+    ]
+  ],
+  "classification_report_text": "              precision    recall  f1-score   support\n\n     Forward     0.0000    0.0000    0.0000         4\n        Left     0.2000    0.2500    0.2222         4\n        Rest     0.6364    0.2121    0.3182        33\n       Right     0.0000    0.0000    0.0000         5\n\n    accuracy                         0.1739        46\n   macro avg     0.2091    0.1155    0.1351        46\nweighted avg     0.4739    0.1739    0.2476        46\n",
+  "classification_report_dict": {
+    "Forward": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 4.0
+    },
+    "Left": {
+      "precision": 0.2,
+      "recall": 0.25,
+      "f1-score": 0.2222222222222222,
+      "support": 4.0
+    },
+    "Rest": {
+      "precision": 0.6363636363636364,
+      "recall": 0.21212121212121213,
+      "f1-score": 0.3181818181818182,
+      "support": 33.0
+    },
+    "Right": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 5.0
+    },
+    "accuracy": 0.17391304347826086,
+    "macro avg": {
+      "precision": 0.2090909090909091,
+      "recall": 0.11553030303030304,
+      "f1-score": 0.1351010101010101,
+      "support": 46.0
+    },
+    "weighted avg": {
+      "precision": 0.4739130434782609,
+      "recall": 0.17391304347826086,
+      "f1-score": 0.24758454106280195,
+      "support": 46.0
+    }
+  },
+  "model_file": "eeg_realtime_model.joblib",
+  "run_dir": "trained_model/eeg_training_20261109_131757",
+  "model_path": "trained_model/eeg_training_20261109_131757/eeg_realtime_model.joblib"
+}

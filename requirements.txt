@@ -1,0 +1,7 @@
+# Runtime dependencies for 03_control_app. Install from the repository root.
+brainflow>=5.12,<6
+numpy>=1.24,<3
+PyQt5>=5.15,<6
+pyserial>=3.5,<4
+scikit-learn>=1.3,<2
+joblib>=1.3,<2
